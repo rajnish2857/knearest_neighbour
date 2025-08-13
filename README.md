@@ -1,50 +1,18 @@
-# Decision Tree and Random Forest Classification
+# K-Nearest Neighbors (KNN) Classification on Iris Dataset
 
-This Jupyter Notebook (`descisiontree_randonfores.ipynb`) demonstrates classification using Decision Tree and Random Forest algorithms, including model pruning, feature importance, and cross-validation.
+This Jupyter Notebook (`knn.ipynb`) demonstrates the K-Nearest Neighbors algorithm for classification using the Iris dataset, including dimensionality reduction, model evaluation, and decision boundary visualization.
 
 ## Contents
 
-- **Data Loading & Preprocessing:**  
-  Loads `dataset.csv`, removes duplicates, and splits data into features (`X`) and target (`y`).
+- **Data Loading:**  
+  Loads the Iris dataset using scikit-learn.
 
-- **Decision Tree Classifier:**  
-  - Trains a basic Decision Tree.
-  - Evaluates train and test accuracy.
-  - Visualizes the tree.
-  - Applies pruning (`max_depth=3`) and re-evaluates accuracy.
+- **Dimensionality Reduction:**  
+  Applies Principal Component Analysis (PCA) to reduce features to 2D for visualization.
 
-- **Random Forest Classifier:**  
-  - Trains a Random Forest with 100 trees.
-  - Evaluates train and test accuracy.
-  - Computes feature importances.
+- **Data Preprocessing:**  
+  Standardizes features using `StandardScaler`.
 
-- **Model Evaluation:**  
-  - Compares pruned Decision Tree and Random Forest accuracy.
-  - Uses `cross_val_score` for 5-fold cross-validation on both models.
-
-## Requirements
-
-- Python 3.x
-- Jupyter Notebook
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
-
-Install dependencies:
-```sh
-pip install pandas numpy matplotlib seaborn scikit-learn
-```
-
-## Usage
-
-1. Place `dataset.csv` in the project directory.
-2. Open and run `descisiontree_randonfores.ipynb` in Jupyter Notebook or VS Code.
-3. Follow the notebook cells for step-by-step model training and evaluation.
-
-## Notes
-
-- The notebook demonstrates both overfitting and pruning for Decision Trees.
-- Random Forest feature importances are displayed for interpretability.
-- Cross-validation provides a robust estimate of model performance.
+- **Model Training & Evaluation:**  
+  - Splits data into training and test sets.
+  - Trains
